@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'McLaren', cursive;
+  font-size: 30px;
+
+}
+
+.container .pregunta {
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+}

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="pregunta">
+    <p class="mt-4">{{arrPreguntas[preguntaActiva].textoPregunta}}</p>
+  </div>
+  <div class="respuestas mt-5">
+    <botonera [respuestas]="arrPreguntas[preguntaActiva].respuestas"
+      (respuestaSeleccionada)="manejarRespuestaSeleccionada($event)"></botonera>
+  </div>
+  <div class="preguntasAcertadas mt-5">
+    <p>Preguntas Restantes <strong>{{preguntasRestantes}}</strong></p>
+    <p>Preguntas Acertadas <strong>{{preguntasCorrectas}}</strong> </p>
+    <p>{{mensaje}}</p>
+  </div>
+</div>
